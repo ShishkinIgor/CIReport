@@ -13,7 +13,7 @@ Checking out Revision e85fc6e3632db9aedc4816507df48e833afa9f4d (origin/test)
  > git checkout -f e85fc6e3632db9aedc4816507df48e833afa9f4d
 Commit message: "Avoid warnings"
  > git rev-list --no-walk e85fc6e3632db9aedc4816507df48e833afa9f4d # timeout=10
-[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins5030107335975716520.sh
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins8483864751077015810.sh
 + cd /Users/Shared/Jenkins/Home/workspace/NativeEngine/gles3jni
 + export ANDROID_HOME=/Users/igorshishkin/Library/Android/sdk
 + ANDROID_HOME=/Users/igorshishkin/Library/Android/sdk
@@ -94,9 +94,9 @@ ninja: no work to do.
 :app:assembleRelease
 :app:assemble
 
-BUILD SUCCESSFUL in 7s
+BUILD SUCCESSFUL in 8s
 54 actionable tasks: 4 executed, 50 up-to-date
-[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins1160744287003930765.sh
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins1175310206174196053.sh
 + export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools
 + PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools
 + echo 'PATH: /usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools'
@@ -113,21 +113,25 @@ Performing Post build task...
 Match found for : : True
 Logical operation result is TRUE
 Running script  : echo "PUSH BUILD LOGS"
+export PATH=${PATH}:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 
 LogPath="$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/log"
-DestPath="/Users/igorshishkin/Documents/JenkinsLogs/$JOB_NAME/$BUILD_NUMBER"
+DestPath="/Users/igorshishkin/Documents/JenkinsLogs/CIReport/$JOB_NAME/$BUILD_NUMBER"
 InfoPath="$DestPath/info"
 
 mkdir -p $DestPath && cp $LogPath $DestPath
 
 echo $GIT_COMMIT > $InfoPath
 echo $GIT_BRANCH >> $InfoPath
-echo $GIT_AUTHOR_NAME >> $InfoPath
-[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins2544711439761416014.sh
+
+mono /Users/igorshishkin/Documents/JenkinsLogs/CIReport/ReadmeCreator.exe
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins8516631190277533585.sh
 + echo 'PUSH BUILD LOGS'
 PUSH BUILD LOGS
-+ LogPath=/Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/43/log
-+ DestPath=/Users/igorshishkin/Documents/JenkinsLogs/NativeEngine/43
-+ InfoPath=/Users/igorshishkin/Documents/JenkinsLogs/NativeEngine/43/info
-+ mkdir -p /Users/igorshishkin/Documents/JenkinsLogs/NativeEngine/43
-+ cp /Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/43/log /Users/igorshishkin/Documents/JenkinsLogs/NativeEngine/43
++ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ LogPath=/Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/49/log
++ DestPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/49
++ InfoPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/49/info
++ mkdir -p /Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/49
++ cp /Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/49/log /Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/49

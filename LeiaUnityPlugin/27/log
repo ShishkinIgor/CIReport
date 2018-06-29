@@ -1,0 +1,103 @@
+Started by user [8mha:////4IDMcDDNYP2v1Qe8fMScRynQGZqSw6str7IQE2jc4XLiAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:LeiaInc/LeiaLoftUnityPackage.git # timeout=10
+Fetching upstream changes from git@github.com:LeiaInc/LeiaLoftUnityPackage.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress git@github.com:LeiaInc/LeiaLoftUnityPackage.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/unity_tests_project^{commit} # timeout=10
+Checking out Revision 70dfa4811ffb327a6b12d4d01e4e396c11958fee (origin/unity_tests_project)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 70dfa4811ffb327a6b12d4d01e4e396c11958fee
+Commit message: "Merge branch 'fix_leia_camera' into unity_tests_project"
+ > git rev-list --no-walk 70dfa4811ffb327a6b12d4d01e4e396c11958fee # timeout=10
+[LeiaUnityPlugin] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins3082170978224120135.sh
++ chmod a+x /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/projects_sync.sh
++ /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/projects_sync.sh
+[LeiaUnityPlugin] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins2812978695266073084.sh
++ project=/Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source
++ runBuild /Applications/Unity/Unity.app/Contents/MacOS/Unity
++ unityPath=/Applications/Unity/Unity.app/Contents/MacOS/Unity
++ echo ''
+
++ echo 'Attempting to build /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source for OSX'
+Attempting to build /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source for OSX
++ /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -nographics -silent-crashes -logFile /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/unity.log -projectPath /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source -buildOSXUniversalPlayer /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Build/osx/Build.exe -quit
+Launching external process: /Applications/Unity/Unity.app/Contents/Resources/Upm/upm-macos
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/JobProcess
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+debugger-agent: Unable to listen on 26
++ testResult=0
++ '[' 0 = 0 ']'
++ echo 'OSX build COMPLETED!'
+OSX build COMPLETED!
++ runBuild /Applications/Unity/Unity.app/Contents/MacOS/Unity
++ unityPath=/Applications/Unity/Unity.app/Contents/MacOS/Unity
++ echo ''
+
++ echo 'Attempting to build /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source for OSX'
+Attempting to build /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source for OSX
++ /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -nographics -silent-crashes -logFile /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/unity.log -projectPath /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source -buildOSXUniversalPlayer /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Build/osx/Build.exe -quit
+Launching external process: /Applications/Unity/Unity.app/Contents/Resources/Upm/upm-macos
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/JobProcess
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+debugger-agent: Unable to listen on 26
++ testResult=0
++ '[' 0 = 0 ']'
++ echo 'OSX build COMPLETED!'
+OSX build COMPLETED!
+[LeiaUnityPlugin] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins3991117944558792339.sh
++ project=/Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source
++ testLog=/Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/TestResults.xml
++ echo ''
+
++ echo 'Attempting to run /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source tests'
+Attempting to run /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source tests
++ /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -silent-crashes -projectPath /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/Source -editorTestsResultFile /Users/Shared/Jenkins/Home/workspace/LeiaUnityPlugin/TestResults.xml -runEditorTests
++ testResult=0
++ '[' 0 = 0 ']'
++ echo 'UnitTests COMPLETED!'
+UnitTests COMPLETED!
++ exit 0
+Performing Post build task...
+Match found for : : True
+Logical operation result is TRUE
+Running script  : echo "PUSH BUILD LOGS"
+export PATH=${PATH}:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+LogPath="$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/log"
+DestPath="/Users/igorshishkin/Documents/JenkinsLogs/CIReport/$JOB_NAME/$BUILD_NUMBER"
+InfoPath="$DestPath/info"
+
+mkdir -p $DestPath && cp $LogPath $DestPath
+
+echo $GIT_COMMIT > $InfoPath
+echo $GIT_BRANCH >> $InfoPath
+
+mono /Users/igorshishkin/Documents/JenkinsLogs/CIReport/ReadmeCreator.exe
+[LeiaUnityPlugin] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins7529090563415371581.sh
++ echo 'PUSH BUILD LOGS'
+PUSH BUILD LOGS
++ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ LogPath=/Users/Shared/Jenkins/Home/jobs/LeiaUnityPlugin/builds/27/log
++ DestPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/LeiaUnityPlugin/27
++ InfoPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/LeiaUnityPlugin/27/info
++ mkdir -p /Users/igorshishkin/Documents/JenkinsLogs/CIReport/LeiaUnityPlugin/27
++ cp /Users/Shared/Jenkins/Home/jobs/LeiaUnityPlugin/builds/27/log /Users/igorshishkin/Documents/JenkinsLogs/CIReport/LeiaUnityPlugin/27
