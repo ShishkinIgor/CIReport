@@ -1,0 +1,143 @@
+Started by user [8mha:////4IDMcDDNYP2v1Qe8fMScRynQGZqSw6str7IQE2jc4XLiAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /Users/Shared/Jenkins/Home/workspace/NativeEngine
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:LeiaInc/NativeEngine.git # timeout=10
+Fetching upstream changes from git@github.com:LeiaInc/NativeEngine.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials Jenkins private key
+ > git fetch --tags --progress git@github.com:LeiaInc/NativeEngine.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse origin/test^{commit} # timeout=10
+Checking out Revision e85fc6e3632db9aedc4816507df48e833afa9f4d (origin/test)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e85fc6e3632db9aedc4816507df48e833afa9f4d
+Commit message: "Avoid warnings"
+ > git rev-list --no-walk e85fc6e3632db9aedc4816507df48e833afa9f4d # timeout=10
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins2477369416860514859.sh
++ cd /Users/Shared/Jenkins/Home/workspace/NativeEngine/gles3jni
++ export ANDROID_HOME=/Users/igorshishkin/Library/Android/sdk
++ ANDROID_HOME=/Users/igorshishkin/Library/Android/sdk
++ export ANDROID_NDK_HOME=/Users/igorshishkin/Library/Android/ndk
++ ANDROID_NDK_HOME=/Users/igorshishkin/Library/Android/ndk
++ ./gradlew assemble
+Starting a Gradle Daemon (subsequent builds will be faster)
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:createDebugCompatibleScreenManifests UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:splitsDiscoveryTaskDebug UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:javaPreCompileDebug UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:generateJsonModelDebug UP-TO-DATE
+:app:externalNativeBuildDebug
+Build gles3jni arm64-v8a
+ninja: no work to do.
+:app:compileDebugSources
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+:app:mergeDebugJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+:app:transformNativeLibsWithStripDebugSymbolForDebug UP-TO-DATE
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+:app:validateSigningDebug
+:app:packageDebug UP-TO-DATE
+:app:assembleDebug
+:app:preReleaseBuild UP-TO-DATE
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:checkReleaseManifest UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:createReleaseCompatibleScreenManifests UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:splitsDiscoveryTaskRelease UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:javaPreCompileRelease UP-TO-DATE
+:app:compileReleaseJavaWithJavac UP-TO-DATE
+:app:generateJsonModelRelease UP-TO-DATE
+:app:externalNativeBuildRelease
+Build gles3jni arm64-v8a
+ninja: no work to do.
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders UP-TO-DATE
+:app:compileReleaseShaders UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:transformClassesWithPreDexForRelease UP-TO-DATE
+:app:transformDexWithDexForRelease UP-TO-DATE
+:app:mergeReleaseJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:app:transformNativeLibsWithStripDebugSymbolForRelease UP-TO-DATE
+:app:processReleaseJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:app:packageRelease UP-TO-DATE
+:app:assembleRelease
+:app:assemble
+
+BUILD SUCCESSFUL in 7s
+54 actionable tasks: 4 executed, 50 up-to-date
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins6453013825327470497.sh
++ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools
++ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools
++ echo 'PATH: /usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools'
+PATH: /usr/bin:/bin:/usr/sbin:/sbin:/Users/igorshishkin/Library/Android/sdk/platform-tools
++ adbCommand='adb devices'
+++ adb devices
+++ wc -l
++ devices='       2'
++ [[        2 -lt 3 ]]
++ echo $'\342\200\234NO' DEVICE CONNECTED. SKIP $'TESTS.\342\200\235'
+“NO DEVICE CONNECTED. SKIP TESTS.”
++ exit 0
+Performing Post build task...
+Match found for : : True
+Logical operation result is TRUE
+Running script  : echo "PUSH BUILD LOGS"
+
+export PATH=${PATH}:$MONO
+
+LogPath="$JENKINS_HOME/jobs/$JOB_NAME/builds/$BUILD_NUMBER/log"
+DestPath="$CI_REPORT_REPO/$JOB_NAME/$BUILD_NUMBER"
+InfoPath="$DestPath/info"
+
+mkdir -p $DestPath && cp $LogPath $DestPath
+
+echo $GIT_COMMIT > $InfoPath
+echo $GIT_BRANCH >> $InfoPath
+
+mono $CI_REPORT_REPO/ReadmeCreator.exe
+
+cd $CI_REPORT_REPO
+git add *
+git commit -a -m "$JOB_NAME Build $BUILD_NUMBER"
+git push origin
+[NativeEngine] $ /bin/sh -xe /Users/Shared/Jenkins/tmp/jenkins160518079901411172.sh
++ echo 'PUSH BUILD LOGS'
+PUSH BUILD LOGS
++ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
++ LogPath=/Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/54/log
++ DestPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/54
++ InfoPath=/Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/54/info
++ mkdir -p /Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/54
++ cp /Users/Shared/Jenkins/Home/jobs/NativeEngine/builds/54/log /Users/igorshishkin/Documents/JenkinsLogs/CIReport/NativeEngine/54
